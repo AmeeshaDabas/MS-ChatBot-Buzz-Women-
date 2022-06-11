@@ -109,8 +109,42 @@ nlu:
       - I am interested in starting my business
       - I want to earn money by starting a business
       - I want to start a business
+      - start up
       - I have working experience in business
       - I need some assistance in starting my business
+
+   - intent: learn_skills
+    examples: |
+      - What skill i should learn?
+      - skills
+      - I want to learn skills
+      - how can I learn skills
+
+   - intent: suggest_idea_start_up
+    examples: |
+      - give me idea of start up
+      - any idea for start up
+      - idea of start-up
+
+   - intent: start_up_range1
+    examples: |
+      - < Rs. 25000
+      - Rs. 0 - 25000
+      - Less than Rs. 25000
+      - I can invest Rs. 25000
+
+  - intent: start_up_range2
+    examples: |
+      - < Rs. 50000
+      - Rs. 25000 - 50000
+      - Between Rs. 25000 and Rs. 50000
+      - I can invest between Rs. 25000 and Rs. 50000
+
+  - intent: start_up_range3
+    examples: |
+      - > Rs. 50000
+      - More than Rs. 50000
+      - I can invest more than Rs. 50000
 
   - intent: show_interest_farming
     examples: |
@@ -149,12 +183,14 @@ nlu:
       - I have land
       - I have resources
       - I have cattle
+      - I have skills for startup
 
   - intent: resources_negative
     examples: |
       - I don't have money
       - I don't have land
       - I don't have resources
+      - I don't have skills for startup
 
   - intent: enhance_skills
     examples: |
@@ -172,6 +208,7 @@ nlu:
       - I need business suggestions
       - I need some ideas to start a business
       - I need some suggestions to start a business
+      - I need to do start up business
 
   - intent: farming_range1
     examples: |

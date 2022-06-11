@@ -43,7 +43,35 @@ responses:
         - title: "I don't have"
           payload: "/deny"
 
+ utter_start_up_skills_learn_yes:
+  - text: "Great! You can learn these skills with help of your family/friends or online."
 
+  utter_start_up_skills_no:
+  - text: "Would you be able to learn the required skills for your start up businesses?"
+    buttons:
+      - title: "Yes, I will."
+        payload: "/affirm"
+      - title: "I am not sure."
+        payload: "/deny"
+
+   utter_sugg_start_up:
+  - text: "Do you want  any idea for start up?"
+    buttons:
+      - title: "I have my idea of start up"
+        payload: "/affirm"
+      - title: "I don't have any idea , suggest me some start up idea"
+        payload: "/deny"
+  
+   utter_start_up_capital:
+  - text: "How much money can you invest in your start up business?"
+    buttons:
+      - title: "Less than Rs. 25000"
+        payload: "/start_up_range1"
+      - title: "Between Rs. 25000 and Rs. 50000"
+        payload: "/start_up_range2"
+      - title: "More than Rs. 50000"
+        payload: "/start_up_range3"
+ 
   utter_farming:
     - text: "What resources do you have related to farming"
       buttons:

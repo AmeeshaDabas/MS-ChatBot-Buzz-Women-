@@ -36,8 +36,10 @@ stories:
       - action: utter_interest
       - intent: show_interest_start_up
       - action: utter_start_up
+      - intent: investment_fund 
+      - action: utter_start_up_capital
       - intent: resources_positive
-      - action: utter_resources_positive
+      - action: utter_start_up_skills_learn_yes
       - action: utter_did_that_help
       - intent: affirm
       - action: utter_goodbye
@@ -50,8 +52,61 @@ stories:
       - action: utter_interest
       - intent: show_interest_start_up
       - action: utter_start_up
-      - intent: resources_negative
+      - intent: learn_skills
+      - action: utter_start_up_skills_no 
+      - intent: suggest_idea
       - action: utter_need_business_ideas
+      - intent: affirm
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_goodbye
+
+   - story: start up with land and 25k invest
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: need_business_ideas
+      - action: utter_need_business_ideas
+      - intent: show_interest_start_up
+      - action: utter_sugg_start_up
+      - intent: affirm
+      - action: utter_start_up_capital
+      - intent: start_up_range1
+      - action: utter_start_up_rang1
+      - intent: affirm
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_goodbye
+
+  - story: start up with land and 50k invest
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: need_business_ideas
+      - action: utter_need_business_ideas
+      - intent: show_interest_start_up
+      - action: utter_sugg_start_up
+      - intent: affirm
+      - action: utter_start_up_capital
+      - intent: start_up_range2
+      - action: utter_start_up_rang2
+      - intent: affirm
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_goodbye
+
+  - story: start up with land and >50k invest
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: need_business_ideas
+      - action: utter_need_business_ideas
+      - intent: show_interest_start_up
+      - action: utter_sugg_start_up
+      - intent: affirm
+      - action: utter_sugg_start_up
+      - intent: start_up_range3
+      - action: utter_start_up_rang3
       - intent: affirm
       - action: utter_did_that_help
       - intent: affirm
